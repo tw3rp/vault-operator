@@ -79,6 +79,7 @@ type VaultServiceSpec struct {
 type PodPolicy struct {
 	// Resources is the resource requirements for the containers.
 	Resources v1.ResourceRequirements `json:"resources,omitempty"`
+	NodeSelector v1.NodeSelector `json:"nodeSelector,omitempty"	
 }
 
 // SetDefaults sets the default vaules for the vault spec and returns true if the spec was changed
